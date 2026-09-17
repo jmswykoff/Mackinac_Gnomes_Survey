@@ -1,0 +1,89 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background: #c0cefa;
+    padding: 40px;
+}
+
+.container 
+{
+    background: rgba(255, 255, 255, 0.684);
+    padding: 25px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 50rem;
+    border-radius: 5rem;
+    box-shadow: 20px 20px 5px rgba(0,0,0,0.1);
+}
+
+h2 
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label 
+{
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
+
+p 
+{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
+
+select, input[type="text"], textarea 
+{
+    width: 99%;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea 
+{
+    height: 10em;
+    resize: vertical;
+}
+
+.rating-group 
+{
+    margin-top: 1em;
+}
+
+.rating-group input 
+{
+    margin-right: .5em;
+}
+
+button 
+{
+    margin-top: 2em;
+    width: 50%;
+    padding: .5em;
+    margin-left: 25%;
+    background: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover 
+{
+    background: #005fcc;
+}
+
+#status 
+{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}

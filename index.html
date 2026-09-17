@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mackinac Gnomes Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Mackinac Gnomes Employee Survey</h2>
+
+    <form id="mgSurvey">
+
+        <!-- Question 1 -->
+        <label>1. How often do you use the shared spreadsheet?</label>
+        <select name="Q1" required>
+            <option value="Daily">Daily</option>
+            <option value="Several times per week">Several times per week</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Never">Never</option>
+        </select>
+
+        <!-- Question 2 -->
+        <label>2. What part of the current order process causes the most difficulty for you?</label>
+        <select name="Q2" required>
+            <option value="Logging sales">Logging sales</option>
+            <option value="Creating shipping requests">Creating shipping requests</option>
+            <option value="Handling customer inquiries">Handling customer inquiries</option>
+            <option value="Processing refunds">Processing refunds</option>
+            <option value="Weekly reporting">Weekly reporting</option>
+        </select>
+
+        <!-- Question 3 -->
+        <label>3. When you need to search for an order, what is the biggest challenge?</label>
+        <select name="Q3" required>
+            <option value="No unique order number">No unique order number</option>
+            <option value="Conflicting or missing data">Conflicting or missing data</option>
+            <option value="Slow spreadsheet performance">Slow spreadsheet performance</option>
+            <option value="Hard to find shipping status">Hard to find shipping status</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- Question 4 -->
+        <label>4. Do you find the the spreadsheet reliable and accurate during trade shows?</label>
+        <select name="Q4" required>
+            <option value="Very">Very</option>
+            <option value="Mostly">Mostly</option>
+            <option value="Occasionally">Occasionally</option>
+            <option value="Kind of">Kind of</option>
+            <option value="Not at all">Not at all</option>
+        </select>
+
+        <!-- Question 5 -->
+        <label>5. Which new system feature would benefit you the most?</label>
+        <select name="Q5" required>
+            <option value="Automatic shipping request generation">Automatic shipping request generation</option>
+            <option value="Live order status">Live order status</option>
+            <option value="Structured refund tracking">Structured refund tracking</option>
+            <option value="Multi-item purchaseing">Multi-item purchaseing</option>
+            <option value="Automated reports done weekly">Automated reports done weekly</option>
+        </select>
+
+        <p><br>For the next 3 questions, please rate the following aspects of the current order management process on a scale of 1 to 5, where 1 is Very Poor and 5 is Excellent.</p>
+        
+        <!-- Question 6 -->
+        <label name="Q6">6. Rate how accurate the order information is in the current shared spreadsheet.</label>
+        <div class="rating-group">
+            <input type="radio" name="Q6" value="1" required> 1
+            <input type="radio" name="Q6" value="2"> 2
+            <input type="radio" name="Q6" value="3"> 3
+            <input type="radio" name="Q6" value="4"> 4
+            <input type="radio" name="Q6" value="5"> 5
+        </div>
+
+        <!-- Question 7 -->
+        <label name="Q7">7. Rate how easy it is to handle customer questioins using the current system.</label>
+        <div class="rating-group">
+            <input type="radio" name="Q7" value="1" required> 1
+            <input type="radio" name="Q7" value="2"> 2
+            <input type="radio" name="Q7" value="3"> 3
+            <input type="radio" name="Q7" value="4"> 4
+            <input type="radio" name="Q7" value="5"> 5
+        </div>
+
+        <!-- Question 8 -->
+        <label>8. Rate the current inventory system.</label>
+        <div class="rating-group">
+            <input type="radio" name="Q8" value="1" required> 1
+            <input type="radio" name="Q8" value="2"> 2
+            <input type="radio" name="Q8" value="3"> 3
+            <input type="radio" name="Q8" value="4"> 4
+            <input type="radio" name="Q8" value="5"> 5
+        </div>
+
+        <!-- Question 9 -->
+        <label name="Q9">9. Describe a recent situation where the current spreadsheet caused an error, delay, or confusion.</label>
+        <textarea name="Q9" placeholder="    Required entry" required></textarea>
+
+        <!-- Question 10 -->
+        <label name="Q10">10. If you could change one thing about MG’s order management process immediately, what would it be and why?</label>
+        <textarea name="Q10" placeholder="    Required entry" required></textarea>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+
+    <p id="status"></p>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
